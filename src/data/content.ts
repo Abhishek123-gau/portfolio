@@ -1,6 +1,16 @@
 import { Code2, Cpu, Brain, Database, Globe, BookOpen } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
+// Import resume
+import resumePdf from '../assets/ML_1pg_Abhishek_Kushwah.pdf';
+
+// Import project images
+import market3Img from '../assets/market3.png';
+import finance1Img from '../assets/finance1.jpg';
+import travelImg from '../assets/travel.png';
+import grpoImg from '../assets/GRPO.png';
+import satelite1Img from '../assets/satelite1.jpg';
+
 export interface Skill {
     category: string;
     icon: LucideIcon;
@@ -25,7 +35,7 @@ export const personalInfo = {
         email: "abhishek.katiitb@gmail.com",
         linkedin: "https://www.linkedin.com/in/abhishek-kushwah-291255228/",
         github: "https://github.com/Abhishek123-gau",
-        resume: "/ML_1pg_Abhishek_Kushwah.pdf"
+        resume: resumePdf
     }
 };
 
@@ -70,8 +80,8 @@ export const projects = [
         tech: ["NLTK", "Gensim", "Sentence-Transformers (SBERT)", "LSTM", "LDA"],
         github: "https://github.com/Abhishek123-gau/Market-Analysis-prediction-LSTM",
         demo: "#",
-        image: "/src/assets/market3.png",
-        details: "An end-to-end Market Intelligence ecosystem that synchronizes Deep Learning for demand forecasting with advanced Natural Language Processing for competitive benchmarking. The system processes historical sales trends alongside multi-source competitor data to predict future market needs and identify strategic pricing and positioning opportunities.",
+        image: market3Img,
+        details: "An end-to-end Market Intelligence ecosystem that synchronizes Deep Learning for demand forecasting with advanced Natural Language Processing for competitive benchmarking. The system processes historical sales trends alongside multi-source competitor data to predict future market needs and identify strategic pricing and opportunities.",
         features: [
             "Predictive Demand Modeling: Multivariate LSTM neural network achieving high-precision 6-month forecasts by correlating volume with complex pricing and macro-export indices.",
             "Competitor Semantic Mapping: Automated LDA topic modeling and TF-IDF extraction to benchmark product positioning and uncover high-impact market-gap keywords.",
@@ -87,7 +97,7 @@ export const projects = [
         tech: ["Python", "PyTorch", "Sentence-Transformers", "BM25", "NLTK", "HuggingFace"],
         github: "https://github.com/Abhishek123-gau/Finance_Data_Retriever",
         demo: "#",
-        image: "/src/assets/finance1.jpg",
+        image: finance1Img,
         details: "An end-to-end document intelligence pipeline that leverages a multi-stage hybrid retrieval architecture. The system processes high-volume financial data streams—such as employment agreements and fiscal reports—by combining the speed of BM25 sparse retrieval with the precision of Neural Cross-Encoders to identify and rank the most contextually relevant information.",
         "features": [
             "Hybrid Multi-Stage Retrieval: Engineered a tiered pipeline orchestrating BM25, SBERT dense embeddings, and transformer-based re-ranking to achieve maximum recall and precision.",
@@ -104,7 +114,7 @@ export const projects = [
         tech: ["OpenAI GPT-4", "PostgreSQL (pgvector)", "Redis (State Orchestration)", "Docker", "LangGraph (Dynamic Directed Acyclic Graphs)"],
         github: "https://github.com/Abhishek123-gau/Travel-Assistant",
         demo: "#",
-        image: "/src/assets/travel.png",
+        image: travelImg,
         details: "The architecture utilizes a sophisticated supervisor-orchestrator pattern with dynamic runtime workflow generation via LangGraph. It leverages a decoupled plugin registry for O(1) scalability of heterogeneous service providers and integrates an asynchronous proactive intelligence layer for context-aware event monitoring and predictive user engagement",
         features: [
             "Orchestrated Dynamic Capability Routing: Leveraged LangGraph to synthesize adaptive runtime execution paths, transitioning from rigid, hard-coded logic to a fluid, hierarchical agentic ecosystem capable of complex multi-domain orchestration.",
@@ -128,7 +138,7 @@ export const projects = [
         ],
         github: "https://github.com/Abhishek123-gau/FInetuning_using_GRPO_RL",
         demo: "#",
-        image: "/src/assets/GRPO.png",
+        image: grpoImg,
         details: "Architected a decentralized reinforcement learning pipeline via a 'from-scratch' GRPO engine, specifically optimized for extreme memory efficiency on commodity 4GB VRAM hardware. The system implements a multi-dimensional reward-driven alignment schema to synchronize complex Chain-of-Thought (CoT) reasoning with deterministic financial accuracy",
         features: [
             "Deployed an optimized QLoRA-based training architecture, leveraging 4-bit NormalFloat (NF4) quantization and gradient checkpointing to unlock large-scale model optimization on edge-tier hardware nodes.",
@@ -145,7 +155,7 @@ export const projects = [
         tech: ["PyTorch", "3D-Convolutional Neural Networks (3D-CNN)", "3D-Residual Networks (3D-ResNet)", "DropBlock Structured Regularization", "Rasterio", "EarthPy"],
         github: "https://github.com/Abhishek123-gau/Statellite_Hyper-spectral_image_classification",
         demo: "#",
-        image: "/src/assets/satelite1.jpg", // Reusing a placeholder
+        image: satelite1Img,
         details: "The system orchestrates a sophisticated dual-pathway feature extraction pipeline, simultaneously capturing spectral signatures and spatial dependencies within high-dimensional HSI data cubes. By integrating 3D architectural variants, it mitigates information loss inherent in traditional dimensionality reduction techniques.",
         features: [
             "Orchestrated 3D-ResNet3D pipelines for deep volumetric feature extraction, enabling superior land-cover classification accuracy.",
@@ -192,7 +202,6 @@ export const experience = [
             "Trained and evaluated state-of-the-art object detection models (Faster-RCNN, YOLOv8), achieving 95.5%+ detection accuracy with optimized inference speed."
         ]
     }
-
 ];
 
 export const achievements = [
