@@ -10,7 +10,7 @@ import finance1Img from '../assets/finance1.jpg';
 import travelImg from '../assets/travel.png';
 import grpoImg from '../assets/GRPO.png';
 import satelite1Img from '../assets/satelite1.jpg';
-
+import webideImg from '../assets/flow_diagram_wrapped.png';
 export interface Skill {
     category: string;
     icon: LucideIcon;
@@ -75,6 +75,23 @@ export const skills: Skill[] = [
 export const projects = [
     {
         id: 1,
+        title: "Autonomous Web IDE",
+        description: "An intelligent, local-first development environment that autonomously generates full-stack React applications via natural language",
+        tech: ["LangGraph", "LangChain", "Ollama", "DeepSeek-Coder", "Qwen 2.5", "FastAPI", "React 19", "Vite", "Server-Sent Events (SSE)", "Pydantic", "SQLAlchemy", "Tailwind CSS v4"],
+        github: "https://github.com/Abhishek123-gau/Web-IDE",
+        demo: "#",
+        image: webideImg,
+        details: "An end-to-end autonomous Web IDE ecosystem that synchronizes multi-agent state machines with real-time preview environments. The system processes conversational user intent and translates it into persistent, production-ready React applications executed within a strictly sandboxed local workspace.",
+        features: [
+            "Multi-Agent Orchestration: Stateful LangGraph workflow coordinating a decentralized mixture of specialists (Qwen 2.5 for strategic planning, Qwen-Coder for schema design, DeepSeek for raw syntax) to automate complex code generation pipelines.",
+            "Automated DOM Compilation: Programmatic translation of strongly typed Pydantic JSON structures into recursively nested, fully-functional React component hierarchies dynamically styled with Tailwind CSS v4.",
+            "Real-Time Engine Telemetry: Asynchronous FastAPI architecture providing ultra-low latency Server-Sent Events (SSE) streaming of agent thought processes alongside a fully-managed Vite sub-process for live previewing.",
+            "Persistent Context Engine: Deep architectural state management leveraging SQLAlchemy, bridging granular chat histories with deterministic UI tree schemas to ensure instant, context-aware project restorations."
+        ],
+        challenges: "Enforcing strict deterministic JSON compliance from LLMs using constrained prompt engineering, preventing component isolation hallucinations during segmented code generation, and safely orchestrating dynamic web servers via internal Python subprocessing without blocking the main event loop."
+    },
+    {
+        id: 2,
         title: "Market-Analysis-prediction-LSTM",
         description: "LSTM-based multivariate time-series model for 6-month spice demand forecasting using historical sales, pricing trends, and macroeconomic indicators.",
         tech: ["NLTK", "Gensim", "Sentence-Transformers (SBERT)", "LSTM", "LDA"],
@@ -91,7 +108,7 @@ export const projects = [
         challenges: "Integrating heterogeneous data streams (time-series vs. unstructured text), optimizing SBERT embedding density for small-sample semantic clustering, and mitigating recursive multi-step forecast drift in highly seasonal market environments."
     },
     {
-        id: 2,
+        id: 3,
         title: "Finance Data Retrieval System",
         description: "A high-performance neural retrieval ecosystem designed to synchronize sparse keyword search with deep semantic ranking for complex financial document intelligence.",
         tech: ["Python", "PyTorch", "Sentence-Transformers", "BM25", "NLTK", "HuggingFace"],
@@ -108,7 +125,7 @@ export const projects = [
         challenges: "Optimizing sub-second latency for pairwise Cross-Encoder scoring across high-volume candidate sets, and mitigating semantic drift within specialized financial/legal vocabularies to ensure linguistic precision."
     },
     {
-        id: 3,
+        id: 4,
         title: "Hierarchical Multi-Agent Travel Orchestration Ecosystem",
         description: "A high-performance, plugin-based multi-agent framework engineered for automated end-to-end travel lifecycle management and proactive user assistance.",
         tech: ["OpenAI GPT-4", "PostgreSQL (pgvector)", "Redis (State Orchestration)", "Docker", "LangGraph (Dynamic Directed Acyclic Graphs)"],
@@ -125,7 +142,7 @@ export const projects = [
         challenges: "Overcame critical state fragmentation across asynchronous multi-vendor pipelines by centralizing context management via Redis-backed state orchestration, and mitigated inference latency by implementing modular supervisor routing to prune high-dimensional decision graphs."
     },
     {
-        id: 4,
+        id: 5,
         title: "FinREASON: Orchestrated low-VRAM GRPO for High-Fidelity Financial Intelligence",
         description: "Leveraging transformer-based architectures and Group Relative Policy Optimization to drive unprecedented structural reasoning and mathematical precision in financial data interpretation.",
         tech: [
@@ -149,7 +166,7 @@ export const projects = [
         challenges: "Successfully mitigated volatile Gradient Descent trajectories through the calibration of a clipped surrogate objective function; navigated hardware-level memory bottlenecks by dynamically scaling group sizes and orchestrating localized gradient checkpointing."
     },
     {
-        id: 5,
+        id: 6,
         title: "Spectral-Spatial Intelligence Core (SSIC)",
         description: "Enterprise-grade hyperspectral image classification engine leveraging volumetric deep learning for high-precision autonomous land-cover mapping.",
         tech: ["PyTorch", "3D-Convolutional Neural Networks (3D-CNN)", "3D-Residual Networks (3D-ResNet)", "DropBlock Structured Regularization", "Rasterio", "EarthPy"],
