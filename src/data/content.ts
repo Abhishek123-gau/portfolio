@@ -115,7 +115,7 @@ export const projects = [
         github: "https://github.com/Abhishek123-gau/Finance_Data_Retriever",
         demo: "#",
         image: finance1Img,
-        details: "An end-to-end document intelligence pipeline that leverages a multi-stage hybrid retrieval architecture. The system processes high-volume financial data streams—such as employment agreements and fiscal reports—by combining the speed of BM25 sparse retrieval with the precision of Neural Cross-Encoders to identify and rank the most contextually relevant information.",
+        details: "A document intelligence pipeline that leverages a multi-stage hybrid retrieval architecture. The system processes high-volume financial data streams—such as employment agreements and fiscal reports—by combining the speed of BM25 sparse retrieval with the precision of Neural Cross-Encoders to identify and rank the most contextually relevant information.",
         "features": [
             "Hybrid Multi-Stage Retrieval: Engineered a tiered pipeline orchestrating BM25, SBERT dense embeddings, and transformer-based re-ranking to achieve maximum recall and precision.",
             "Neural Semantic Vector Mapping: Utilized deep semantic clustering and high-dimensional SBERT embeddings (all-MiniLM-L6-v2) to transform raw text into actionable, context-aware vector sets.",
@@ -168,7 +168,7 @@ export const projects = [
     {
         id: 6,
         title: "Spectral-Spatial Intelligence Core (SSIC)",
-        description: "Enterprise-grade hyperspectral image classification engine leveraging volumetric deep learning for high-precision autonomous land-cover mapping.",
+        description: "A hyperspectral image classification engine leveraging volumetric deep learning for high-precision autonomous land-cover mapping.",
         tech: ["PyTorch", "3D-Convolutional Neural Networks (3D-CNN)", "3D-Residual Networks (3D-ResNet)", "DropBlock Structured Regularization", "Rasterio", "EarthPy"],
         github: "https://github.com/Abhishek123-gau/Statellite_Hyper-spectral_image_classification",
         demo: "#",
